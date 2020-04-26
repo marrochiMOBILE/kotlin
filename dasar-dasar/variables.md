@@ -47,5 +47,12 @@ println(message + " there") // Hello there
 
 
 ## Read-only variables
-
+Variabel lokal read-only didefinisikan menggunakan val kata kunci. Mereka dapat diberi nilai hanya sekali.
+```kt
+val a: Int = 1  // immediate assignment
+val b = 2   // `Int` type is inferred
+val c: Int?  // Type required when no initializer is provided
+c = 3       // deferred assignment
+println("a = $a, b = $b, c = $c")
+```
 

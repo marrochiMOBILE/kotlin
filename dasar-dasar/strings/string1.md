@@ -43,3 +43,23 @@ println(xx.trim().length) // 3
 println(xx.length) // 5
 ```
 
+## replace
+mengganti string lama ke string yg baru
+```kt
+fun main() {
+        var a = 1
+        // simple name in template:
+        val s1 = "a is $a"
+
+        a = 2
+        // arbitrary expression in template:
+        val s2 = "${s1.replace("is", "was")}, but now is $a"
+        println(s2)
+}
+```
+
+output:
+```
+a was 1, but now is 2
+```
+

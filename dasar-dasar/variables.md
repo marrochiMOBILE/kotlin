@@ -56,3 +56,29 @@ c = 3       // deferred assignment
 println("a = $a, b = $b, c = $c")
 ```
 
+## Variables that can be reassigned
+```kt
+fun main() {
+        var x = 5 // `Int` type is inferred
+        x += 1
+        println("x = $x") // 6
+}
+```
+
+## terakhir
+```kt
+// variabel global
+val PI:Double = 3.14
+var x:Int = 0
+
+fun incrementX() {
+        x += 1
+}
+
+fun main() {
+        println("x = $x; PI = $PI")
+        incrementX()
+        println("incrementX()")
+        println("x = $x; PI = $PI")
+}
+```

@@ -23,9 +23,43 @@ bisanya digunakan untuk menuju halaman yang berbeda kalo di html seperti link iy
 4. // -> memulai pindah aktiviti dari tempat sekarang ke intent 
 
 > bisa jugha seperti contoh dibawah ini
-```php
+```kt
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }, 1000)
+```
+
+ini cara sederhana seperti diatas
+```kt
+    fab.setOnClickListener { view ->
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+
+            startActivity(Intent(this, AddActivity::class.java))
+        }
+    }
+```
+
+disini jugha kalian bisa menggunakan **onSupportNavigateUp** ketika menekan tombol back maka main activity selesai
+```kt
+
+class AddActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_add)
+
+        // tittle
+        supportActionBar!!.setTitle("Tambah Baru Bosque")
+        // icon back home
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+    }
+
+    // ketika di klik icon back selesai akrivitas disini
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return super.onSupportNavigateUp()
+    }
+}
 ```

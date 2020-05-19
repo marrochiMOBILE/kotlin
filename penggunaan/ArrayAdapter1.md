@@ -15,7 +15,7 @@ array adapter untuk menampilkan nilai dari array list contohnya dibawah ini
 ```
 1. //  -> menjalankan fungsi array adapter
 2. //  -> bisa diganti pake `this` yg artinya main aktiviti yg sedang kita jalankan saat ini
-3. //  -> 
+3. //  -> packgae android untuk memanggil method dari layout
 4. //  -> berbagai variasi ini salah satunya yg disediakan kotlin
 5. //  -> variabel yg menyimpan nilai array list
 6. //  -> id listview dengan menggunakan kotlin sintatik

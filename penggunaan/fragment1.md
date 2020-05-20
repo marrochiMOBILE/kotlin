@@ -1,4 +1,21 @@
 # fragment 1
+fragment adalah anak dari aktivitas iya intinya fragment bisa berjalan jika aktivity itu ada 
+```kt
+            // memanggil fragment
+            val fragmentManajer: FragmentManager = supportFragmentManager 
+            val fragmentTransition : FragmentTransaction = fragmentManajer.beginTransaction()
+            
+            // inisial aktivitas fragment contohnya dibah ini kita mempunyai main class pageOne
+            val pageSatu = pageOne() // pageOne disini adalah fragment
+            
+            // frame layout adalah id dari layout main aktivitas
+            fragmentTransition.add(R.id.frame_layoutOchi,pageSatu,pageOne::class.java.simpleName) // pageOne disini adalah fragment
+            
+           
+            fragmentTransition.commit() // baru di commit
+```
+lebih jelasnya lihat dibawah ini 
+
 ## satu
 #### MainActivity.kt
 ```kotlin

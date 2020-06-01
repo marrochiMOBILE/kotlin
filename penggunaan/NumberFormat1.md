@@ -1,4 +1,4 @@
-# NumberFormat
+# NumberFormat 1
 intinya disini bisa memformat number contoh salah satunya kita akan memformat menjadi uang rupiah.
 buat 2 kelas yaitu kelas format rupiah dan main utama.
 
